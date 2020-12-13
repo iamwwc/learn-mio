@@ -73,6 +73,8 @@ use std::io;
 /// }
 /// ```
 pub trait Source {
+    /// LEARN 事件产生的源，可以将自身注册到select
+    /// 
     /// Register `self` with the given `Registry` instance.
     ///
     /// This function should not be called directly. Use [`Registry::register`]

@@ -1,0 +1,443 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in library 'mio'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--lib",
+                    "--package=mio"
+                ],
+                "filter": {
+                    "name": "mio",
+                    "kind": "lib"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug example 'tcp_server'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--example=tcp_server",
+                    "--package=mio"
+                ],
+                "filter": {
+                    "name": "tcp_server",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in example 'tcp_server'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--example=tcp_server",
+                    "--package=mio"
+                ],
+                "filter": {
+                    "name": "tcp_server",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug example 'udp_server'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--example=udp_server",
+                    "--package=mio"
+                ],
+                "filter": {
+                    "name": "udp_server",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in example 'udp_server'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--example=udp_server",
+                    "--package=mio"
+                ],
+                "filter": {
+                    "name": "udp_server",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug integration test 'unix_listener'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--test=unix_listener",
+                    "--package=mio"
+                ],
+                "filter": {
+                    "name": "unix_listener",
+                    "kind": "test"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug integration test 'regressions'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--test=regressions",
+                    "--package=mio"
+                ],
+                "filter": {
+                    "name": "regressions",
+                    "kind": "test"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug integration test 'interest'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--test=interest",
+                    "--package=mio"
+                ],
+                "filter": {
+                    "name": "interest",
+                    "kind": "test"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug integration test 'tcp_stream'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--test=tcp_stream",
+                    "--package=mio"
+                ],
+                "filter": {
+                    "name": "tcp_stream",
+                    "kind": "test"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug integration test 'win_named_pipe'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--test=win_named_pipe",
+                    "--package=mio"
+                ],
+                "filter": {
+                    "name": "win_named_pipe",
+                    "kind": "test"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug integration test 'unix_pipe'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--test=unix_pipe",
+                    "--package=mio"
+                ],
+                "filter": {
+                    "name": "unix_pipe",
+                    "kind": "test"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug integration test 'poll'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--test=poll",
+                    "--package=mio"
+                ],
+                "filter": {
+                    "name": "poll",
+                    "kind": "test"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug integration test 'events'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--test=events",
+                    "--package=mio"
+                ],
+                "filter": {
+                    "name": "events",
+                    "kind": "test"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug integration test 'registering'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--test=registering",
+                    "--package=mio"
+                ],
+                "filter": {
+                    "name": "registering",
+                    "kind": "test"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug integration test 'waker'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--test=waker",
+                    "--package=mio"
+                ],
+                "filter": {
+                    "name": "waker",
+                    "kind": "test"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug integration test 'unix_datagram'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--test=unix_datagram",
+                    "--package=mio"
+                ],
+                "filter": {
+                    "name": "unix_datagram",
+                    "kind": "test"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug integration test 'tcp'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--test=tcp",
+                    "--package=mio"
+                ],
+                "filter": {
+                    "name": "tcp",
+                    "kind": "test"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug integration test 'unix_stream'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--test=unix_stream",
+                    "--package=mio"
+                ],
+                "filter": {
+                    "name": "unix_stream",
+                    "kind": "test"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug integration test 'tcp_socket'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--test=tcp_socket",
+                    "--package=mio"
+                ],
+                "filter": {
+                    "name": "tcp_socket",
+                    "kind": "test"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug integration test 'aio'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--test=aio",
+                    "--package=mio"
+                ],
+                "filter": {
+                    "name": "aio",
+                    "kind": "test"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug integration test 'tcp_listener'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--test=tcp_listener",
+                    "--package=mio"
+                ],
+                "filter": {
+                    "name": "tcp_listener",
+                    "kind": "test"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug integration test 'udp_socket'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--test=udp_socket",
+                    "--package=mio"
+                ],
+                "filter": {
+                    "name": "udp_socket",
+                    "kind": "test"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug integration test 'close_on_drop'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--test=close_on_drop",
+                    "--package=mio"
+                ],
+                "filter": {
+                    "name": "close_on_drop",
+                    "kind": "test"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}

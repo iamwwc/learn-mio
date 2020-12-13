@@ -17,7 +17,7 @@ use std::{fmt, io};
 /// instance using the [`register`] method on its associated `Register`,
 /// supplying readiness interest. The readiness interest tells `Poll` which
 /// specific operations on the handle to monitor for readiness. A `Token` is
-/// also passed to the [`register`] function. When `Poll` returns a readiness
+/// also pqsed to the [`register`] function. When `Poll` returns a readiness
 /// event, it will include this token.  This associates the event with the
 /// event source that generated the event.
 ///
